@@ -94,6 +94,13 @@ add_library(glim SHARED
   src/glim/mapping/sub_mapping_passthrough.cpp
   src/glim/mapping/global_mapping.cpp
   src/glim/mapping/global_mapping_pose_graph.cpp
+  # localization
+  src/glim/localization/localization_callbacks.cpp
+  src/glim/localization/localization_graph.cpp
+  src/glim/localization/localization_module.cpp
+  src/glim/localization/keyframe_selector.cpp
+  src/glim/localization/prior_map/prior_map.cpp
+  src/glim/localization/prior_map/local_map_cache.cpp
   # GPU-related
   ${GPU_SRCS}
 )
